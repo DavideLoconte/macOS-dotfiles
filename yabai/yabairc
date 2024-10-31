@@ -1,0 +1,20 @@
+#!/usr/bin/env sh
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+
+yabai -m config layout bsp \
+                top_padding 3 \
+                bottom_padding 3 \
+                left_padding 3 \
+                right_padding 3 \
+                window_gap 3 \
+                active_window_border_color 0xff00ff00 \
+                active_window_opacity 1.0 \
+                normal_window_opacity 0.8 \
+                mouse_follows_focus on \
+                focus_follows_mouse autofocus 
+
+yabai -m config external_bar all:34:0
+
+yabai -m rule --add app="^System Settings$" sticky=on
