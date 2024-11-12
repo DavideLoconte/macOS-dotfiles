@@ -17,4 +17,5 @@ yabai -m config layout bsp \
 
 yabai -m config external_bar all:34:0
 
-yabai -m rule --add app="^System Settings$" sticky=on
+yabai -m rule --add app="^System Settings$" sticky=on manage=off
+yabai -m rule --add app="Godot" manage=off

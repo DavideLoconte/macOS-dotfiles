@@ -6,5 +6,7 @@ video by [ThePrimeagen](https://github.com/ThePrimeagen).
 
 ## Requirement
 
-- lldb-vscode (for nvim-dap, you need to specify the path through config files)
-
+- ripgrep
+- fzf
+- lldb-vscode (for nvim-dap, you need to specify the path through config files) (WIP)
+- debugpy available in the current python environment python debugging 

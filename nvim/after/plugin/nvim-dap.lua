@@ -7,6 +7,8 @@ vim.keymap.set("n", "<C-j>", dap.step_over)
 vim.keymap.set("n", "<leader>di", dap.step_into)
 vim.keymap.set("n", "<C-o>", dap.repl.open)
 
+-- C/C++ and Rust
+
 dap.adapters.lldb = {
   type = 'executable',
   command = compat.lldb_dap, -- adjust as needed, must be absolute path
@@ -30,4 +32,7 @@ dap.configurations.cpp = {
 
 dap.configurations.c = dap.configurations.cpp
 dap.configurations.rust = dap.configurations.cpp
+
+-- Python
+require('dap-python').setup(compat.python3)
 
