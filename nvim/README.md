@@ -8,5 +8,11 @@ video by [ThePrimeagen](https://github.com/ThePrimeagen).
 
 - ripgrep
 - fzf
-- lldb-vscode (for nvim-dap, you need to specify the path through config files) (WIP)
+- node
+- npm
+- python
+- pip
+
+** Debugging (platform dependent, WIP) **
+- lldb-vscode (WIP)
 - debugpy available in the current python environment python debugging 
