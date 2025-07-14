@@ -10,4 +10,5 @@ sbar.bar({
   margin = 3,
   y_offset=2,
   corner_radius = 9,
+  display = "main"
 })

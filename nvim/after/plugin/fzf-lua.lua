@@ -30,7 +30,7 @@ vim.keymap.set("n", "<leader>fg", function()
 end)
 
 
-vim.keymap.set("n", "<leader>rg", function()
+vim.keymap.set("n", "<leader>gg", function()
     fzf.live_grep({
         cwd=file_dir,
         file_icons = file_icons

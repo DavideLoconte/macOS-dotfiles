@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-ySHA256=$(shasum -a 256 /opt/homebrew/bin/yabai | cut -d' ' -f 1)abai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 sudo yabai --load-sa
 
 yabai -m config layout bsp \
@@ -12,14 +12,14 @@ yabai -m config layout bsp \
                 active_window_border_color 0xff00ff00 \
                 active_window_opacity 1.0 \
                 normal_window_opacity 0.8 \
-                mouse_follows_focus on \
-                focus_follows_mouse autofocus 
 
 yabai -m config external_bar all:34:0
+yabai -m config mouse_follows_focus          off
+yabai -m config focus_follows_mouse          autofocus
+#yabai -m rule --add app=".*" manage=off
 
 yabai -m rule --add app="^System Settings$" sticky=on manage=off
 yabai -m rule --add app="Godot" manage=off
 yabai -m rule --add app="xampp" manage=off
 yabai -m rule --add app="Xournal++" title="Select background color" manage=off
 yabai -m rule --add app="Xournal++" title="Xournal++ Preferences" manage=off
-Xournal++ Preferences
