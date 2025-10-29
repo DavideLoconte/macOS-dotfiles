@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>ff", function ()
         fzf.files({
             cwd=file_dir,
             file_icons = false,
-        })
+ g      })
 end)
 
 

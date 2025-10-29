@@ -32,3 +32,18 @@ vim.opt.updatetime = 50
 vim.opt.colorcolumn = "80,100,120"
 
 vim.opt.clipboard = "unnamedplus"
+
+vim.diagnostic.enable = true
+vim.diagnostic.config({
+    virtual_lines = false,
+})
+
+vim.lsp.config("lua_ls", {
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { "vim" }
+            }
+        }
+    }
+})
